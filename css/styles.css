@@ -1,0 +1,131 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .header {
+        display: block;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    .event-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .schedule {
+        margin-top: 20px;
+    }
+
+    .company-info {
+        margin-top: 40px;
+    }
+
+    .registration-form {
+        margin-top: 40px;
+    }
+
+    .animation-container {
+        position: relative;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    .animation {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+
+    @media (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            margin-bottom: 20px;
+        }
+
+        td {
+            border: none;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        td:nth-of-type(1):before {
+            content: "Flight";
+        }
+
+        td:nth-of-type(2):before {
+            content: "Departure";
+        }
+
+        td:nth-of-type(3):before {
+            content: "Arrival";
+        }
+
+        td:nth-of-type(4):before {
+            content: "Price";
+        }
+    }
